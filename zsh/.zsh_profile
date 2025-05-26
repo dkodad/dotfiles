@@ -1,0 +1,4 @@
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+export GOPATH=$HOME/.local/go

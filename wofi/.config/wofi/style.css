@@ -1,0 +1,41 @@
+* {
+  font-size: 20px;
+  color: #c6d0f5;
+  background: transparent;
+}
+
+window {
+  background-color: rgba(16, 16, 16, 0.95);
+  border-radius: 10px;
+  border: 2px solid #8caaee;
+  padding: 20px;
+}
+
+#input {
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #1e1e2e;
+  color: #c6d0f5;
+  border: none;
+}
+
+#prompt {
+  color: #8caaee;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#entry {
+  padding: 10px 20px;
+  margin: 5px 0;
+  border-radius: 8px;
+  background-color: #101010;
+}
+
+#entry:selected {
+  background-color: #8caaee;
+  color: #101010;
+  font-weight: bold;
+}
+
