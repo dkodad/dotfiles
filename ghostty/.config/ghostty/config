@@ -51,6 +51,7 @@
 theme =  rose-pine
 background = 000000
 gtk-titlebar = false
+background-opacity = 0.9
 
 maximize = true
 font-size = 13
