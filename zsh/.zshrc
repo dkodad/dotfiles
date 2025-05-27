@@ -112,3 +112,7 @@ source ~/.zsh_profile
 export PATH="$HOME/ghostty/zig-out/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 cat ~/.cache/wal/sequences 
+
+
+fpath+=~/.zsh/completions
+autoload -Uz compinit && compinit
