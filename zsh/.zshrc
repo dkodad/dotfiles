@@ -111,4 +111,4 @@ export FZF_CTRL_T_OPTS="
 source ~/.zsh_profile
 export PATH="$HOME/ghostty/zig-out/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-
+cat ~/.cache/wal/sequences 

@@ -1,0 +1,114 @@
+{
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{icon}", // ← Yeh line change karni hai!
+ "format-icons": {
+      "active": "",
+      "default": ""
+    } 
+    },
+
+  "pulseaudio": {
+    "format": "{icon}   {volume}%",
+    "format-bluetooth": "{icon} {volume}% {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": "  0%",
+    "format-source": " {volume}%",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    },
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+  },
+
+  "network": {
+    "format-wifi": "    {signalStrength}%", // Corrected Wi-Fi icon
+    "format-ethernet": "  󰈀  ", // Corrected Ethernet icon
+    "tooltip-format": "{}", // Corrected Ethernet tooltip icon
+    "format-linked": "{ifname} (No IP) 󰌘", // Corrected No IP icon
+    "format-disconnected": " 󰖪 ", // Corrected Disconnected icon
+    "on-click": "ghostty --class floating_kitty sh -c 'cat ~/.cache/wal/sequences; nmtui'"
+  },
+  "bluetooth": {
+    "format": "{icon}", // Only the icon
+    "format-icons": {
+      "enabled": " 󰂰 ", // Bigger Bluetooth ON
+      "disabled": " 󰂲 ", // Bigger Bluetooth OFF
+      "connected": " 󰂱 " // Bigger Bluetooth Connected
+    },
+    "tooltip": false,
+    "exec": "bluetoothctl show | grep -q 'Powered: yes' && echo 'enabled' || echo 'disabled'",
+    "interval": 2,
+    "on-click": "blueman-manager"
+  },
+  "cpu": {
+    "format": "\uf4bc  {usage}%",
+    "tooltip": true
+  },
+  "memory": {
+    "format": "  {}%",
+    "tooltip": true
+  },
+  "temperature": {
+    "interval": 10,
+    "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input",
+    "critical-threshold": 100,
+    "format-critical": "  {temperatureC}",
+    "format": "  {temperatureC}°C"
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-full": "{icon} {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "  {capacity}%",
+    "format-alt": "{time}  {icon}",
+    "format-icons": ["󰁺", "󰁼", "󰁾", "󰁿", "󰁹"]
+  },
+  "battery#bat2": {
+    "bat": "BAT2"
+  },
+"clock": {
+    "timezone": "CET",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%m/%d - %H:%M}"
+  }, 
+    "custom/wlogout": {
+    "format": "⏻",
+    "tooltip": true,
+    "tooltip-format": "left-click - session screen\nRight click - Screenlock",
+    "on-click": "wlogout -b 6",
+    "on-click-right": "hyprlock"
+  },
+  "taskbar": {
+    "on-click": "activate",
+    "tooltip": false,
+    "format": "{icon} {workspaces}",
+    "group-by": "workspaces"
+  },
+  "tray": {
+    "icon-size": 25,
+    "spacing": 4
+  },
+
+  "wlr/taskbar": {
+    "icon-size": 25,
+    "spacing": 0,
+    "tooltip": true,
+    "on-click": "activate",
+    "on-click-right": "close",
+    "on-scroll-up": "activate-previous",
+    "on-scroll-down": "activate-next"
+  }
+}
