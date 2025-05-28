@@ -3,8 +3,7 @@
 
 
 * {
-    /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
-    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family:SpaceMono Nerd Font, feather;
     font-size: 14px;
     padding: 0;
     margin: 0;
@@ -17,10 +16,6 @@ window#waybar{
     color: @color2;
     padding: 0px;
     margin: 0px;
-    font-family: 
-        SpaceMono Nerd Font,
-        feather;
-    
 }
 
 
@@ -88,9 +83,6 @@ window#waybar{
 
 #workspaces{
 background: rgba(0, 0, 8, .7);
-  font-family:
-    SpaceMono Nerd Font,
-    feather;
   font-weight: 900;
   margin: 5px 2px;
   padding: 0px 7px;
@@ -121,9 +113,6 @@ background: rgba(0, 0, 8, .7);
 }
 #taskbar{
 background: rgba(0, 0, 8, .7);
-  font-family:
-    SpaceMono Nerd Font,
-    feather;
   font-weight: 900;
   margin: 5px 2px;
   padding: 0px 0px;
@@ -136,9 +125,6 @@ background: rgba(0, 0, 8, .7);
 
 #taskbar button{
 background: rgba(0, 0, 8, 0);
-  font-family:
-    SpaceMono Nerd Font,
-    feather;
   font-weight: 900;
   padding: 0px 3px;
   font-size: 14px;
@@ -151,14 +137,25 @@ background: rgba(0, 0, 8, 0);
     padding: 2px 0px;
 }
 #language{
-    font-size: 10px;
-    padding: 5px ;
+    font-weight: 900;
+    font-size: 15px;
+    padding: 0 5px; 
     min-width: 20px;
     border-radius: 5px;
 }
+
 #custom-wlogout {
-    font-size: 25px;
+    font-size: 15px;
     padding: 0px 10px;
+}
+#network{
+    color: @color2;
+    background: @background;
+    border-radius: 5px;
+    border: @color2 solid 0px;
+    font-size: 25px;
+    padding:0px 7px;
+
 }
 #tray{
     color: @color2;
