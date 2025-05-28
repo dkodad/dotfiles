@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     font-weight: bolder;
-    min-height: 20px;
+    min-height: 10px;
 }
 
 window#waybar{
@@ -48,14 +48,14 @@ window#waybar{
 #custom-clip,
 #taskbar button,
 #mpd {
-    padding:0 7px;
+    padding:0px 7px;
     border-radius: 5px;
     border: @color2 solid 0px;
     background: @color2;
     color: @background;
-    margin: 0px 2px 0px 2px;
+    margin: 5px 2px;
     font-weight: bold;
-    min-width: 35px; 
+    min-width: 15px; 
 }
 
 
@@ -140,7 +140,6 @@ background: rgba(0, 0, 8, 0);
     SpaceMono Nerd Font,
     feather;
   font-weight: 900;
-  margin: 5px 0px;
   padding: 0px 3px;
   font-size: 14px;
   color: #c0caf5;
@@ -150,6 +149,12 @@ background: rgba(0, 0, 8, 0);
 #bluetooth{
     font-size: 20px;
     padding: 2px 0px;
+}
+#language{
+    font-size: 10px;
+    padding: 5px ;
+    min-width: 20px;
+    border-radius: 5px;
 }
 #custom-wlogout {
     font-size: 25px;

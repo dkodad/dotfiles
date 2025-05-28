@@ -14,13 +14,12 @@
     "modules-right": [
         "cpu",
         "memory",
-        "temperature",
         "battery",
         "tray",
         "pulseaudio",
         "network",
         "bluetooth",
-        "battery#bat2",
+        "hyprland/language",
         "custom/wlogout",
     ],
     //Modules configuration
