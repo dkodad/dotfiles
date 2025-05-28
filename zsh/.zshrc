@@ -4,6 +4,10 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export XDG_CONFIG_HOME=$HOME/.config
+
+
+
+alias wchanger="~/.config/Scripts/wallpaper_changer.sh &"
 alias dotpush="~/dotfiles-sync.sh"
 
 # Set name of the theme to load --- if set to "random", it will
