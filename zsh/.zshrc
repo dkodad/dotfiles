@@ -7,7 +7,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 
 
 
-alias wchanger="~/.config/Scripts/wallpaper_changer.sh &"
+alias wchanger="~/.local/scripts/wallpaper_changer.sh &"
 alias dotpush="~/dotfiles-sync.sh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -115,6 +115,8 @@ export FZF_CTRL_T_OPTS="
 source ~/.zsh_profile
 export PATH="$HOME/ghostty/zig-out/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/scripts:$PATH"
+
 cat ~/.cache/wal/sequences 
 
 

@@ -2,3 +2,6 @@
 
 
 export GOPATH=$HOME/.local/go
+
+bindkey -s ^f "tmux-sessionizer\n"
+bindkey -s ^w "wchanger"

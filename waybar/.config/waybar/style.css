@@ -155,7 +155,9 @@ background: rgba(0, 0, 8, 0);
     border: @color2 solid 0px;
     font-size: 25px;
     padding:0px 7px;
-
+}
+#network.wifi {
+  font-size: 12px;
 }
 #tray{
     color: @color2;

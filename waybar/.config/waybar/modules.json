@@ -30,12 +30,12 @@
   },
 
   "network": {
-    "format-wifi": "    {signalStrength}%", // Corrected Wi-Fi icon
+    "format-wifi": "{signalStrength}%", // Corrected Wi-Fi icon
     "format-ethernet": "󰈀", // Corrected Ethernet icon
     "tooltip-format": "{}", // Corrected Ethernet tooltip icon
     "format-linked": "{ifname} (No IP) 󰌘", // Corrected No IP icon
     "format-disconnected": " 󰖪 ", // Corrected Disconnected icon
-    "on-click": "ghostty --class floating_kitty sh -c 'cat ~/.cache/wal/sequences; nmtui'"
+    "on-click":  " nmtui"
   },
   "bluetooth": {
     "format": "{icon}", // Only the icon
