@@ -8,7 +8,7 @@ pgrep -x swww-daemon > /dev/null || swww-daemon
 sleep 0.5  # wait for swww
 
 # Random wallpaper
-WALLPAPER=$(find "$HOME/Wallpaper/" -type f | shuf -n 1)
+WALLPAPER=$(find "$HOME/Wallpaper/wallpapers" -type f | shuf -n 1)
 
 # Set wallpaper
 swww img "$WALLPAPER" --transition-type random --transition-duration 2
