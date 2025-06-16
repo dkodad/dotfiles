@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/tmux-sessionizer"
-CONFIG_FILE="$CONFIG_DIR/tmux-sessionizer.conf"
 
 # config file example
 # ------------------------
@@ -14,18 +12,7 @@ CONFIG_FILE="$CONFIG_DIR/tmux-sessionizer.conf"
 # TS_MAX_DEPTH=2
 # ------------------------
 
-# test if the config file exists
-if [[ -f "$CONFIG_FILE" ]]; then
-    # shellcheck source=/dev/null
-    source "$CONFIG_FILE"
-fi
-
 sanity_check() {
-    if ! command -v tmux &>/dev/null; then
-        echo "tmux is not installed. Please install it first."
-        exit 1
-    fi
-
     if ! command -v fzf &>/dev/null; then
         echo "fzf is not installed. Please install it first."
         exit 1
@@ -59,6 +46,7 @@ sanity_check
 
 # Add any extra search paths to the TS_SEARCH_PATHS array
 # e.g : EXTRA_SEARCH_PATHS=("$HOME/extra1:4" "$HOME/extra2")
+TS_EXTRA_SEARCH_PATHS=(~/Projects)
 # note : Path can be suffixed with :number to limit or extend the depth of the search for the Path
 
 if [[ ${#TS_EXTRA_SEARCH_PATHS[@]} -gt 0 ]]; then
