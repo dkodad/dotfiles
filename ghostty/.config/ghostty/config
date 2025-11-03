@@ -48,10 +48,11 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 #
-theme =  rose-pine
+theme =  Rose Pine
 background = 000000
 gtk-titlebar = false
 background-opacity = 0.9
+shell-integration = zsh
 
 maximize = true
 font-size = 13

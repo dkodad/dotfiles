@@ -4,7 +4,7 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export XDG_CONFIG_HOME=$HOME/.config
-
+# At the top of ~/.zshrc
 
 
 alias wchanger="~/.local/scripts/wallpaper_changer.sh &"
@@ -113,11 +113,10 @@ export FZF_CTRL_T_OPTS="
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.zsh_profile
-export PATH="$HOME/ghostty/zig-out/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/scripts:$PATH"
+export PATH="$HOME/bin:$PATH"
 
-cat ~/.cache/wal/sequences 
+#cat ~/.cache/wal/sequences 
 
 
 fpath+=~/.zsh/completions

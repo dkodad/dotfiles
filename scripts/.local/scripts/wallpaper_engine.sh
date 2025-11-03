@@ -9,7 +9,7 @@ fi
 # Infinite loop to change wallpaper every 5 minutes
 while true; do
     # Select a random wallpaper
-    WALLPAPER=$(find ~/Wallpaper/ -type f | shuf -n 1)
+    WALLPAPER=$(find ~/Wallpaper/wallpapers -type f | shuf -n 1)
 
     # Set the wallpaper using swww
     swww img "$WALLPAPER" --transition-type random
