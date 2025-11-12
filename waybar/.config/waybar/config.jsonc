@@ -5,7 +5,7 @@
     "spacing": 1, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-center": [
-        "clock",
+        "clock"
     ],
     "modules-left": [
         "hyprland/workspaces",
@@ -15,7 +15,6 @@
         "cpu",
         "memory",
         "battery",
-        "tray",
         "pulseaudio",
         "network",
         "bluetooth",

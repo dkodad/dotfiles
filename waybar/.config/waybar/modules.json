@@ -3,7 +3,7 @@
     "disable-scroll": true,
     "all-outputs": true,
     "warp-on-scroll": false,
-    "format": "{icon}", // ← Yeh line change karni hai!
+    "format": "{icon}", 
  "format-icons": {
       "active": "",
       "default": ""
@@ -30,24 +30,24 @@
   },
 
   "network": {
-    "format-wifi": "{signalStrength}%", // Corrected Wi-Fi icon
-    "format-ethernet": "󰈀", // Corrected Ethernet icon
-    "tooltip-format": "{}", // Corrected Ethernet tooltip icon
-    "format-linked": "{ifname} (No IP) 󰌘", // Corrected No IP icon
-    "format-disconnected": " 󰖪 ", // Corrected Disconnected icon
-    "on-click":  " nmtui"
+    "format-wifi": "  {signalStrength}%", 
+    "format-ethernet": "󰈀", 
+    "tooltip-format": "{}", 
+    "format-linked": "{ifname} (No IP) 󰌘",
+    "format-disconnected": "󰖪",
+    "on-click":  "nmtui"
   },
   "bluetooth": {
-    "format": "{icon}", // Only the icon
+    "format": " {icon} ", 
     "format-icons": {
-      "enabled": " 󰂰 ", // Bigger Bluetooth ON
-      "disabled": " 󰂲 ", // Bigger Bluetooth OFF
-      "connected": " 󰂱 " // Bigger Bluetooth Connected
+      "enabled": "󰂰",
+      "disabled": "󰂲",
+      "connected": "󰂱"
     },
     "tooltip": false,
-    "exec": "bluetoothctl show | grep -q 'Powered: yes' && echo 'enabled' || echo 'disabled'",
     "interval": 2,
     "on-click": "blueman-manager"
+
   },
   "cpu": {
     "format": "\uf4bc  {usage}%",
@@ -86,10 +86,6 @@
     "tooltip": false,
     "format": "{icon} {workspaces}",
     "group-by": "workspaces"
-  },
-  "tray": {
-    "icon-size": 35,
-    "spacing": 10
   },
 "hyprland/language": {
   "format": " {}",
