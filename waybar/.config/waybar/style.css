@@ -6,24 +6,41 @@
     font-family:SpaceMono Nerd Font, feather;
     font-size: 12px;
     padding: 0;
-    border: none;
-    margin: 0;
+    margin: 2px;
     font-weight: bolder;
     min-height: 0px;
 
-    background-color: @color2;
-    color: @background;
+    color: @color0;
 }
+#waybar{
+    background-color: @background;
+    padding-top:2px
 
+}
 .modules-left {
   margin-left: 8px;
+    background-color: @color1;
+    color: @foreground;
+    border-radius: 15px;
+    padding-left:10px;
+    padding-right:10px;
 }
 
-.modules-right {
+.modules-center {
+background-color: @color1;
   margin-right: 8px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 15px;
+}
+.modules-right {
+background-color: @color1;
+  margin-right: 8px;
+    border-radius: 15px;
+    padding-left:10px;
+    padding-right:10px;
 }
 #workspaces button {
-  all: initial;
   padding: 0 6px;
   margin: 0 1.5px;
   min-width: 9px;
@@ -33,10 +50,14 @@
 }
 #cpu,
 #battery,
-#pulseaudio,
-#language {
+#pulseaudio
+ {
   min-width: 12px;
   margin: 0 7.5px;
+}
+#language {
+  margin-right: 18px;
+  min-width: 12px;
 }
 #custom-wlogout {
   margin-right: 13px;
@@ -53,6 +74,8 @@
 
 tooltip {
   padding: 2px;
+    color: @color0;
+    background-color: @color1;
 }
 
 
