@@ -6,8 +6,16 @@
     "format": "{icon}", 
  "format-icons": {
       "active": "",
+        "1": "1",
+      "2": "2",
+      "3": "3",
       "default": ""
-    } 
+    },
+        "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+    }
     },
 
   "pulseaudio": {
@@ -50,8 +58,11 @@
 
   },
   "cpu": {
+    "interval": 5,
     "format": "\uf4bc  {usage}%",
-    "tooltip": true
+    "tooltip": true,
+    "on-click": "ghostty -e btop" 
+
   },
   "memory": {
     "format": "  {}%",
@@ -94,7 +105,7 @@
 },
   "wlr/taskbar": {
     "icon-size": 15,
-    "spacing": 0,
+    "spacing": 17,
     "tooltip": true,
     "on-click": "activate",
     "on-click-right": "close",
