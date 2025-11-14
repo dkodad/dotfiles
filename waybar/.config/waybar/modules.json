@@ -19,10 +19,10 @@
     },
 
   "pulseaudio": {
-    "format": "{icon}   {volume}%",
+    "format": "{icon}  {volume}%",
     "format-bluetooth": "{icon} {volume}% {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": "  0%",
+    "format-muted": "0%",
     "format-source": " {volume}%",
     "format-source-muted": "",
     "format-icons": {
@@ -38,12 +38,11 @@
   },
 
   "network": {
-    "format-wifi": "  {signalStrength}%", 
-    "format-ethernet": "󰈀", 
+    "format-wifi": " {signalStrength}%", 
+    "format-ethernet": " 󰈀 ", 
     "tooltip-format": "{}", 
     "format-linked": "{ifname} (No IP) 󰌘",
-    "format-disconnected": "󰖪",
-    "on-click":  "nmtui"
+    "format-disconnected": "󰖪"
   },
   "bluetooth": {
     "format": " {icon} ", 
