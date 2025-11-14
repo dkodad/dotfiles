@@ -8,7 +8,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 
 
 alias wchanger="~/.local/scripts/wallpaper_changer.sh &"
-alias dotpush="~/dotfiles-sync.sh"
+alias dotpush="~/dev/dotfiles-sync.sh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
